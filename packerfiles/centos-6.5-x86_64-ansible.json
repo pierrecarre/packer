@@ -38,7 +38,7 @@
     }
   ],
   "post-processors": [
-    {
+    [{
       "type": "vagrant",
       "output": "../builds/{{.Provider}}/pierrecarre_centos-6.5_ansible-{{user `ansible_version`}}.box"
     },
@@ -47,7 +47,7 @@
       "box_tag": "{{user `box_tag`}}",
       "access_token": "{{user `cloud_token`}}",
       "version": "{{user `version`}}"
-    }
+    }]
   ],
   "provisioners": [
     {
